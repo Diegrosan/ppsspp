@@ -190,6 +190,7 @@ option(USE_UBSAN "Use undefined behaviour sanitizer" OFF)
 option(USE_CCACHE "Use ccache if detected" ON)
 option(USE_NO_MMAP "Disable mmap usage" OFF)
 
+
 if(USING_GLES3)
     set(OPENGL_LIBRARIES GLESv3 EGL)
     add_definitions(-DUSING_GLES3)
@@ -197,6 +198,7 @@ elseif(USING_GLES2)
     set(OPENGL_LIBRARIES GLESv2 EGL)
     add_definitions(-DUSING_GLES2)
 endif()
+
 
 if(USING_GLES3)
     add_definitions(-DUSING_GLES3)
