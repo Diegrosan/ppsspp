@@ -206,8 +206,6 @@ elseif(USING_GLES2)
     set(OPENGL_LIBRARIES GLESv2 EGL)
 endif()
 
-target_link_libraries(${CoreLibName} ${OPENGL_LIBRARIES})
-
 if(USE_CCACHE)
 	include(ccache)
 endif()
